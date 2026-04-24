@@ -71,7 +71,7 @@ Depends: extra-cmake-modules (>= 6.22.0~),
          ${misc:Depends},
 Recommends: libsonicinterface-doc (= ${source:Version}),
 Breaks: libplasma-dev,
-Replaces: libplasma-dev,
+Provides: libplasma-dev,
 Description: development files for sonic-interface-libraries
  Sonic library and runtime components based upon KF6 and Qt 6.
  .
@@ -98,6 +98,8 @@ Breaks: libplasma6,
         libplasma7,
 Replaces: libplasma6,
           libplasma7,
+Provides: libplasma6,
+          libplasma7,
 Description: Plasma Runtime components
  Plasma library and runtime components based upon KF6 and Qt 6.
 
@@ -107,7 +109,7 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libplasmaquick7,
-Replaces: libplasmaquick7,
+Provides: libplasmaquick7,
 Description: Sonic Runtime components
  Sonic library and runtime components based upon KF6 and Qt 6.
 
