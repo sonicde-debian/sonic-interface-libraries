@@ -71,7 +71,7 @@ Depends: extra-cmake-modules (>= 6.22.0~),
          ${misc:Depends},
 Recommends: libsonicinterface-doc (= ${source:Version}),
 Conflicts: libplasma-dev,
-Provides: libplasma-dev,
+Provides: libplasma-dev (= ${binary:Version}),
 Description: development files for sonic-interface-libraries
  Sonic library and runtime components based upon KF6 and Qt 6.
  .
@@ -82,7 +82,7 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
 Conflicts: libplasma-doc,
-Provides: libplasma-doc,
+Provides: libplasma-doc (= ${binary:Version}),
 Description: Sonic Runtime components (documentation)
  Sonic library and runtime components based upon KF6 and Qt 6.
  .
@@ -95,9 +95,10 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Conflicts: libplasma6,
-           libplasma7,
-Provides: libplasma6,
+        libplasma7,
+Replaces: libplasma6,
           libplasma7,
+Provides: libplasma7 (= ${binary:Version}),
 Description: Plasma Runtime components
  Plasma library and runtime components based upon KF6 and Qt 6.
 
@@ -107,7 +108,7 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Conflicts: libplasmaquick7,
-Provides: libplasmaquick7,
+Provides: libplasmaquick7 (= ${binary:Version}),
 Description: Sonic Runtime components
  Sonic library and runtime components based upon KF6 and Qt 6.
 
@@ -129,7 +130,8 @@ Depends: qml6-module-org-kde-kirigami,
          ${shlibs:Depends},
 Conflicts: plasma-framework (<< 5.115.0-6~),
         plasma-desktoptheme,
-Provides: plasma-framework (<< 5.115.0-6~),
+Replaces: plasma-framework (<< 5.115.0-6~),
           plasma-desktoptheme,
+Provides: plasma-desktoptheme (= ${binary:Version}),
 Description: Sonic Runtime components
  Sonic library and runtime components based upon KF6 and Qt 6.
