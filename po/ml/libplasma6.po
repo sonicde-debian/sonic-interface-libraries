@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-framework\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-24 02:42+0000\n"
+"POT-Creation-Date: 2026-04-05 02:41+0000\n"
 "PO-Revision-Date: 2019-12-14 15:16+0530\n"
 "Last-Translator: Nithin S Sabu <nithinsn@protonmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc."
@@ -97,6 +97,11 @@ msgstr "വിഡ്ജറ്റുകളുടെ വിലക്കഴിക�
 msgid "Exit Edit Mode"
 msgstr ""
 
+#: plasma/pluginloader.cpp:145
+#, kde-format
+msgid "Could not find requested component: %1"
+msgstr "ആവശ്യപ്പെട്ട ഘടകം കണ്ടെത്തുവാനായില്ല: %1"
+
 #: plasma/private/applet_p.cpp:119
 #, kde-format
 msgid "Show Alternatives..."
@@ -166,11 +171,6 @@ msgstr "പ്രവൃത്തി ക്രമീകരണങ്ങള്‍"
 #, kde-format
 msgid "Add or Manage Widgets…"
 msgstr ""
-
-#: plasma/private/containment_p.cpp:188
-#, kde-format
-msgid "Could not find requested component: %1"
-msgstr "ആവശ്യപ്പെട്ട ഘടകം കണ്ടെത്തുവാനായില്ല: %1"
 
 #: plasmaquick/appletquickitem.cpp:540
 #, kde-format
