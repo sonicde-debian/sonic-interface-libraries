@@ -1,17 +1,17 @@
 # Translation of libplasma6.po to Catalan (Valencian)
-# Copyright (C) 2014-2024 This_file_is_part_of_KDE
+# Copyright (C) 2014-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2014, 2018, 2019, 2020, 2022 Antoni Bella Pérez <antonibella5@yahoo.com>
 # SPDX-FileCopyrightText: 2019 Empar Montoro Martín <montoro_mde@gva.es>
 msgid ""
 msgstr ""
 "Project-Id-Version: libplasma\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
-"PO-Revision-Date: 2024-08-23 11:00+0200\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
+"PO-Revision-Date: 2026-04-09 10:59+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -20,12 +20,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: declarativeimports/plasmaextracomponents/qml/BasicPlasmoidHeading.qml:82
 #, kde-format
 msgid "More actions"
 msgstr "Més accions"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr "Mostra l'ajuda contextual"
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -69,7 +75,7 @@ msgstr "Desconegut"
 msgid "Activate %1 Widget"
 msgstr "Activa el giny %1"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -80,7 +86,7 @@ msgstr "Elimina %1"
 msgid "Enter Edit Mode"
 msgstr "Entra en el mode edició"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -106,52 +112,52 @@ msgstr "Ix del mode edició"
 msgid "Could not find requested component: %1"
 msgstr "No s'ha pogut trobar el component sol·licitat: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "Mostra les alternatives…"
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "S'ha eliminat el giny"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "S'ha eliminat el giny «%1»."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "S'ha eliminat el quadro"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "S'ha eliminat un quadro."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "S'ha eliminat l'escriptori"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "S'ha eliminat un escriptori."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "Desfés"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "Configureu el giny"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "Suprimix este giny"
@@ -194,7 +200,7 @@ msgstr "Miniaplicació desconeguda"
 #: plasmaquick/appletquickitem.cpp:567
 #, kde-format
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
@@ -211,7 +217,7 @@ msgstr "%1 no és compatible amb Plasma %2"
 #: plasmaquick/appletquickitem.cpp:574
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
 "Este giny s'ha escrit per a Plasma %1 i no és compatible amb Plasma %2. "
@@ -220,7 +226,7 @@ msgstr ""
 #: plasmaquick/appletquickitem.cpp:580
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
 "Este giny s'ha escrit per a Plasma %1 i no és compatible amb Plasma %2. "

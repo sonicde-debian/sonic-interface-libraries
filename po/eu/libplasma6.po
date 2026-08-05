@@ -1,7 +1,7 @@
 # Translation for libplasma6.po to Euskara/Basque (eu).
 # Copyright (C) 2017-2026 This file is copyright:
 # This file is distributed under the same license as the plasma-framework package.
-# SPDX-FileCopyrightText: 2023, 2024 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023-2024, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Osoitz <oelkoro@gmail.com>, 2017.
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-framework\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
-"PO-Revision-Date: 2024-08-23 10:57+0200\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
+"PO-Revision-Date: 2026-06-04 20:32+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -20,12 +20,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: declarativeimports/plasmaextracomponents/qml/BasicPlasmoidHeading.qml:82
 #, kde-format
 msgid "More actions"
 msgstr "Ekintza gehiago"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr "Erakutsi testuinguru-laguntza"
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -69,7 +75,7 @@ msgstr "Ezezaguna"
 msgid "Activate %1 Widget"
 msgstr "Aktibatu %1 trepeta"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -80,7 +86,7 @@ msgstr "Kendu %1"
 msgid "Enter Edit Mode"
 msgstr "Sartu editatzeko modura"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -106,52 +112,52 @@ msgstr "Irten editatzeko modutik"
 msgid "Could not find requested component: %1"
 msgstr "Ezin izan da aurkitu eskautako osagaia: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "Erakutsi ordezko aukerak..."
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "Trepeta kendu da"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "\"%1\" trepeta kendu da."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "Panela kenduta"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "Panel bat kendu da."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "Mahaigaina kenduta"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "Mahaigain bat kendu da."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "Desegin"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "Trepetaren ezarpenak"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "Kendu trepeta hau"
@@ -194,13 +200,13 @@ msgstr "Aplikaziotxo ezezaguna"
 #: plasmaquick/appletquickitem.cpp:567
 #, kde-format
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
-"Trepeta hori Plasmaren bertsio ezezagun baterako idatzi zen eta ez da Plasma "
-"%1(e)rekin bateragarria. Mesedez, eguneratu Plasma trepeta erabili ahal "
-"izateko."
+"Trepeta hau Plasmaren bertsio zaharrago ezezagun baterako idatzi zen eta ez "
+"da Plasma %1(r)ekin bateragarria. Mesedez, jar zaitez trepetaren egilearekin "
+"harremanean eguneratutako bertsio bat lortzeko."
 
 #: plasmaquick/appletquickitem.cpp:570 plasmaquick/appletquickitem.cpp:577
 #: plasmaquick/appletquickitem.cpp:583
@@ -211,20 +217,20 @@ msgstr "%1 ez da bateragarria Plasma %2(r)ekin"
 #: plasmaquick/appletquickitem.cpp:574
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
-"Trepeta hori Plasma %1(e)rako idatzi zen eta ez da Plasma %2(e)rekin "
-"bateragarria. Mesedez, jar zaitez trepetaren  egilearekin harremanean "
-"eguneratutako bertsio baterako."
+"Trepeta hau Plasmaren %1(e)rako idatzi zen eta ez da Plasma %2(r)ekin "
+"bateragarria. Mesedez, jar zaitez trepetaren egilearekin harremanean "
+"eguneratutako bertsio bat lortzeko."
 
 #: plasmaquick/appletquickitem.cpp:580
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
-"Trepeta hori Plasma %1(e)rako idatzi zen eta ez da Plasma %2(e)rekin "
+"Trepeta hau Plasmaren %1(e)rako idatzi zen eta ez da Plasma %2(r)ekin "
 "bateragarria. Mesedez, eguneratu Plasma trepeta erabili ahal izateko."
 
 #: plasmaquick/appletquickitem.cpp:589 plasmaquick/appletquickitem.cpp:611

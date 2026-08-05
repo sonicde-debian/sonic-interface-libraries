@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmapkg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
 "PO-Revision-Date: 2024-10-17 13:50+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -28,6 +28,12 @@ msgstr ""
 #, kde-format
 msgid "More actions"
 msgstr "Lisää toimintoja"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr ""
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -71,7 +77,7 @@ msgstr "Tuntematon"
 msgid "Activate %1 Widget"
 msgstr "Aktivoi sovelma %1"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -82,7 +88,7 @@ msgstr "Poista %1|/|Poista $[yleisnimi_pienellä %1]"
 msgid "Enter Edit Mode"
 msgstr "Siirry muokkaustilaan"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -108,52 +114,52 @@ msgstr "Poistu muokkaustilasta"
 msgid "Could not find requested component: %1"
 msgstr "Pyydettyä komponenttia ei löytynyt: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "Näytä vaihtoehdot…"
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "Sovelma poistettu"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "Sovelma ”%1” on poistettu."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "Paneeli poistettu"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "Paneeli on poistettu."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "Työpöytä poistettu"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "Työpöytä on poistettu."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "Kumoa"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "Sovelman asetukset"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "Poista tämä sovelma"
@@ -194,9 +200,13 @@ msgid "Unknown Applet"
 msgstr "Tuntematon sovelma"
 
 #: plasmaquick/appletquickitem.cpp:567
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for an unknown older version of Plasma and is not "
+#| "compatible with Plasma %1. Please contact the widget's author for an "
+#| "updated version."
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
@@ -211,18 +221,24 @@ msgid "%1 is not compatible with Plasma %2"
 msgstr "%1 ei ole yhteensopiva Plasma-version %2 kanssa"
 
 #: plasmaquick/appletquickitem.cpp:574
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for Plasma %1 and is not compatible with Plasma "
+#| "%2. Please contact the widget's author for an updated version."
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
 "Sovelma on kirjoitettu Plasma-versiolle %1 eikä ole yhteensopiva Plasma-"
 "version %2 kanssa. Ota yhteyttä sovelman tekijään ja pyydä päivitetty versio."
 
 #: plasmaquick/appletquickitem.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for Plasma %1 and is not compatible with Plasma "
+#| "%2. Please update Plasma in order to use the widget."
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
 "Sovelma on kirjoitettu Plasma-versiolle %1 eikä ole yhteensopiva Plasma-"

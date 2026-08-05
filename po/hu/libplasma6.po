@@ -4,13 +4,13 @@
 # Balázs Úr <urbalazs@gmail.com>, 2013, 2014.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2014, 2015, 2019.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2018, 2020, 2021.
-# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024, 2026 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
-"PO-Revision-Date: 2024-09-22 21:52+0200\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
+"PO-Revision-Date: 2026-05-30 21:43+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -18,12 +18,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: declarativeimports/plasmaextracomponents/qml/BasicPlasmoidHeading.qml:82
 #, kde-format
 msgid "More actions"
 msgstr "További műveletek"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr "Kontextusérzékeny súgó megjelenítése"
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -67,7 +73,7 @@ msgstr "Ismeretlen"
 msgid "Activate %1 Widget"
 msgstr "%1 felületi elem aktiválása"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -78,7 +84,7 @@ msgstr "A(z) %1 eltávolítása"
 msgid "Enter Edit Mode"
 msgstr "Belépés a szerkesztőmódba"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -104,52 +110,52 @@ msgstr "Kilépés a szerkesztőmódból"
 msgid "Could not find requested component: %1"
 msgstr "A kért komponens nem található: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "Alternatívák megjelenítése…"
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "Elem eltávolítva"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "A(z) „%1” elem eltávolításra került."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "Panel eltávolítva"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "Egy panel eltávolításra került."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "Asztal eltávolítva"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "Egy asztal eltávolításra került."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "Visszavonás"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "Felületi elem beállítások"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "Felületi elem eltávolítása"
@@ -192,7 +198,7 @@ msgstr "Ismeretlen kisalkalmazás"
 #: plasmaquick/appletquickitem.cpp:567
 #, kde-format
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
@@ -209,7 +215,7 @@ msgstr "A(z) %1 nem kompatibilis a Plasma %2 verzióval"
 #: plasmaquick/appletquickitem.cpp:574
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
 "Az elem a Plasma %1 verziójához készült, és nem kompatibilis a Plasma %2 "
@@ -218,7 +224,7 @@ msgstr ""
 #: plasmaquick/appletquickitem.cpp:580
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
 "Az elem a Plasma %1 verziójához készült, és nem kompatibilis a Plasma %2 "

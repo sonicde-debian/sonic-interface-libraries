@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
-"PO-Revision-Date: 2025-05-17 11:10+0400\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
+"PO-Revision-Date: 2026-04-11 18:08+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -22,6 +22,12 @@ msgstr ""
 #, kde-format
 msgid "More actions"
 msgstr "إجراءات أكثر"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr "اعرض المساعدة السياقية"
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -65,7 +71,7 @@ msgstr "مجهول"
 msgid "Activate %1 Widget"
 msgstr "فعّل الودجة %1"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -76,7 +82,7 @@ msgstr "أزِل %1"
 msgid "Enter Edit Mode"
 msgstr "ادخل نمط التحرير"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -102,52 +108,52 @@ msgstr "اخرج من نمط التحرير"
 msgid "Could not find requested component: %1"
 msgstr "تعذر العثور على المكون المطلوب: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "أظهر البدائل..."
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "أُزيلت ودجة"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "أُزيلت الودجة ”%1“."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "أُزيلت لوحة"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "أُزيلت إحدى اللوحات."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "أُزيل سطح مكتب"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "أُزيل أحد أسطح المكتب."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "تراجع"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "إعدادات الودجة"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "أزِل هذه الودجة"
@@ -190,7 +196,7 @@ msgstr "تطبيق مجهول"
 #: plasmaquick/appletquickitem.cpp:567
 #, kde-format
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
@@ -206,7 +212,7 @@ msgstr "%1 غير متوافق مع بلازما %2"
 #: plasmaquick/appletquickitem.cpp:574
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
 "كُتبت هذه الأداة لإصدار بلازما %1 وهي غير متوافقة مع بلازما  %2.  . يرجى "
@@ -215,7 +221,7 @@ msgstr ""
 #: plasmaquick/appletquickitem.cpp:580
 #, kde-format
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
 "كُتبت هذه الأداة لإصدار بلازما %1 وهي غير متوافقة مع بلازما %2. يرجى تحديث "

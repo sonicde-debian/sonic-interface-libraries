@@ -49,7 +49,6 @@ AppletPrivate::AppletPrivate(const KPluginMetaData &info, int uniqueID, Applet *
     , activationAction(nullptr)
     , itemStatus(Types::UnknownStatus)
     , modificationsTimer(nullptr)
-    , deleteNotificationTimer(nullptr)
     , hasConfigurationInterface(false)
     , failed(false)
     , transient(false)
@@ -227,7 +226,7 @@ void AppletPrivate::askDestroy()
         // no parent, but it won't leak, since it will be closed both in case of timeout
         // or direct action
         deleteNotification = new KNotification(QStringLiteral("plasmoidDeleted"));
-        deleteNotification->setFlags(KNotification::Persistent | KNotification::SkipGrouping);
+        deleteNotification->setFlags(KNotification::SkipGrouping);
 
         deleteNotification->setComponentName(QStringLiteral("plasma_workspace"));
         deleteNotification->setIconName(q->icon());
@@ -250,14 +249,12 @@ void AppletPrivate::askDestroy()
         KNotificationAction *undoAction = deleteNotification->addAction(i18n("Undo"));
         QObject::connect(undoAction, &KNotificationAction::activated, q, [=, this]() {
             setDestroyed(false);
-            if (!q->isContainment() && q->containment()) {
+            if (q->containment() && q->containment() != q) {
                 Plasma::Applet *containmentApplet = static_cast<Plasma::Applet *>(q->containment());
-                if (containmentApplet && containmentApplet->d->deleteNotificationTimer) {
+                if (containmentApplet && containmentApplet->d->transient) {
                     Q_EMIT containmentApplet->destroyedChanged(false);
                     // when an applet gets transient, it's "systemimmutable"
                     Q_EMIT q->immutabilityChanged(q->immutability());
-                    delete containmentApplet->d->deleteNotificationTimer;
-                    containmentApplet->d->deleteNotificationTimer = nullptr;
                 }
 
                 // make sure the applets are sorted by id
@@ -272,10 +269,6 @@ void AppletPrivate::askDestroy()
             }
             if (deleteNotification) {
                 deleteNotification->close();
-            } else if (deleteNotificationTimer) {
-                deleteNotificationTimer->stop();
-                deleteNotificationTimer->deleteLater();
-                deleteNotificationTimer = nullptr;
             }
         });
         QObject::connect(deleteNotification.data(), &KNotification::closed, q, [this]() {
@@ -283,31 +276,16 @@ void AppletPrivate::askDestroy()
             if (transient) {
                 cleanUpAndDelete();
             }
-            if (deleteNotificationTimer) {
-                deleteNotificationTimer->stop();
-                deleteNotificationTimer->deleteLater();
-                deleteNotificationTimer = nullptr;
+        });
+
+        QTimer::singleShot(60000, q, [this] {
+            if (deleteNotification) {
+                deleteNotification->close();
             }
         });
 
         deleteNotification->sendEvent();
-        if (!deleteNotificationTimer) {
-            deleteNotificationTimer = new QTimer(q);
-            // really delete after a minute
-            deleteNotificationTimer->setInterval(60 * 1000);
-            deleteNotificationTimer->setSingleShot(true);
-            QObject::connect(deleteNotificationTimer, &QTimer::timeout, q, [=, this]() {
-                transient = true;
-                if (deleteNotification) {
-                    deleteNotification->close();
-                } else {
-                    Q_EMIT q->destroyedChanged(true);
-                    cleanUpAndDelete();
-                }
-            });
-            deleteNotificationTimer->start();
-        }
-        if (!q->isContainment() && q->containment()) {
+        if (q->containment() && q->containment() != q) {
             Q_EMIT q->containment()->appletAboutToBeRemoved(q);
             q->containment()->d->applets.removeAll(q);
             Q_EMIT q->containment()->appletRemoved(q);
@@ -423,6 +401,7 @@ void AppletPrivate::propagateConfigChanged()
 
 void AppletPrivate::setUiReady()
 {
+    uiReady = true;
     // If we a re a containment, call setUiReady
     Containment *thisContainment = qobject_cast<Containment *>(q);
     if (thisContainment && thisContainment->isContainment()) {

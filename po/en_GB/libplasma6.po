@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmapkg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-05 02:41+0000\n"
+"POT-Creation-Date: 2026-06-02 03:54+0000\n"
 "PO-Revision-Date: 2024-08-24 12:05+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -24,6 +24,12 @@ msgstr ""
 #, kde-format
 msgid "More actions"
 msgstr "More actions"
+
+#: declarativeimports/plasmaextracomponents/qml/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr ""
 
 #: declarativeimports/plasmaextracomponents/qml/ExpandableListItem.qml:587
 #, kde-format
@@ -67,7 +73,7 @@ msgstr "Unknown"
 msgid "Activate %1 Widget"
 msgstr "Activate %1 Widget"
 
-#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:101
+#: plasma/containment.cpp:100 plasma/private/applet_p.cpp:100
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Remove %1"
@@ -78,7 +84,7 @@ msgstr "Remove %1"
 msgid "Enter Edit Mode"
 msgstr "Enter Edit Mode"
 
-#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:106
+#: plasma/containment.cpp:109 plasma/private/applet_p.cpp:105
 #, kde-format
 msgctxt "%1 is the name of the applet"
 msgid "Configure %1..."
@@ -104,52 +110,52 @@ msgstr "Exit Edit Mode"
 msgid "Could not find requested component: %1"
 msgstr "Could not find requested component: %1"
 
-#: plasma/private/applet_p.cpp:119
+#: plasma/private/applet_p.cpp:118
 #, kde-format
 msgid "Show Alternatives..."
 msgstr "Show Alternatives..."
 
-#: plasma/private/applet_p.cpp:237
+#: plasma/private/applet_p.cpp:236
 #, kde-format
 msgid "Widget Removed"
 msgstr "Widget Removed"
 
-#: plasma/private/applet_p.cpp:238
+#: plasma/private/applet_p.cpp:237
 #, kde-format
 msgid "The widget \"%1\" has been removed."
 msgstr "The widget \"%1\" has been removed."
 
-#: plasma/private/applet_p.cpp:242
+#: plasma/private/applet_p.cpp:241
 #, kde-format
 msgid "Panel Removed"
 msgstr "Panel Removed"
 
-#: plasma/private/applet_p.cpp:243
+#: plasma/private/applet_p.cpp:242
 #, kde-format
 msgid "A panel has been removed."
 msgstr "A panel has been removed."
 
-#: plasma/private/applet_p.cpp:246
+#: plasma/private/applet_p.cpp:245
 #, kde-format
 msgid "Desktop Removed"
 msgstr "Desktop Removed"
 
-#: plasma/private/applet_p.cpp:247
+#: plasma/private/applet_p.cpp:246
 #, kde-format
 msgid "A desktop has been removed."
 msgstr "A desktop has been removed."
 
-#: plasma/private/applet_p.cpp:250
+#: plasma/private/applet_p.cpp:249
 #, kde-format
 msgid "Undo"
 msgstr "Undo"
 
-#: plasma/private/applet_p.cpp:341
+#: plasma/private/applet_p.cpp:319
 #, kde-format
 msgid "Widget Settings"
 msgstr "Widget Settings"
 
-#: plasma/private/applet_p.cpp:347
+#: plasma/private/applet_p.cpp:325
 #, kde-format
 msgid "Remove this Widget"
 msgstr "Remove this Widget"
@@ -190,9 +196,13 @@ msgid "Unknown Applet"
 msgstr "Unknown Applet"
 
 #: plasmaquick/appletquickitem.cpp:567
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for an unknown older version of Plasma and is not "
+#| "compatible with Plasma %1. Please contact the widget's author for an "
+#| "updated version."
 msgid ""
-"This Widget was written for an unknown older version of Plasma and is not "
+"This widget was written for an unknown older version of Plasma and is not "
 "compatible with Plasma %1. Please contact the widget's author for an updated "
 "version."
 msgstr ""
@@ -207,18 +217,24 @@ msgid "%1 is not compatible with Plasma %2"
 msgstr "%1 is not compatible with Plasma %2"
 
 #: plasmaquick/appletquickitem.cpp:574
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for Plasma %1 and is not compatible with Plasma "
+#| "%2. Please contact the widget's author for an updated version."
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 msgstr ""
 "This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please contact the widget's author for an updated version."
 
 #: plasmaquick/appletquickitem.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This Widget was written for Plasma %1 and is not compatible with Plasma "
+#| "%2. Please update Plasma in order to use the widget."
 msgid ""
-"This Widget was written for Plasma %1 and is not compatible with Plasma %2. "
+"This widget was written for Plasma %1 and is not compatible with Plasma %2. "
 "Please update Plasma in order to use the widget."
 msgstr ""
 "This Widget was written for Plasma %1 and is not compatible with Plasma %2. "

@@ -541,7 +541,6 @@ Containment *CoronaPrivate::addContainment(const QString &name, const QVariantLi
 {
     QString pluginName = name;
     Containment *containment = nullptr;
-    Applet *applet = nullptr;
 
     // qCDebug(LOG_PLASMA) << "Loading" << name << args << id;
 
@@ -552,33 +551,31 @@ Containment *CoronaPrivate::addContainment(const QString &name, const QVariantLi
 
     bool loadingNull = pluginName == QLatin1String("null");
     if (!loadingNull) {
-        applet = PluginLoader::self()->loadApplet(pluginName, id, args);
+        Applet *applet = PluginLoader::self()->loadApplet(pluginName, id, args);
         containment = dynamic_cast<Containment *>(applet);
+
+        // in case we got a non-Containment from Applet::loadApplet
+        if (applet && !containment) {
+            // the applet probably doesn't know what's hit it, so let's pretend it can be
+            // initialized to make assumptions in the applet's dtor safer
+            applet->init();
+            delete applet;
+        }
+
         if (containment) {
             containment->setParent(q);
         }
     }
 
     if (!containment) {
-        if (!loadingNull) {
-#ifndef NDEBUG
-            // qCDebug(LOG_PLASMA) << "loading of containment" << name << "failed.";
-#endif
-        }
         // in case we got a non-Containment from Applet::loadApplet or
         // a null containment was requested
-        if (applet) {
-            // the applet probably doesn't know what's hit it, so let's pretend it can be
-            // initialized to make assumptions in the applet's dtor safer
-            applet->init();
-            delete applet;
-        }
-        applet = containment = new Containment(q, KPluginMetaData(), QVariantList{QVariant(), id});
+        containment = new Containment(q, KPluginMetaData(), QVariantList{QVariant(), id});
         if (lastScreen >= 0) {
             containment->d->lastScreen = lastScreen;
         }
         // if it's a dummy containment, just say its ui is ready, not blocking the corona
-        applet->updateConstraints(Applet::UiReadyConstraint);
+        containment->updateConstraints(Applet::UiReadyConstraint);
 
         // we want to provide something and don't care about the failure to launch
         containment->setFormFactor(Plasma::Types::Planar);
